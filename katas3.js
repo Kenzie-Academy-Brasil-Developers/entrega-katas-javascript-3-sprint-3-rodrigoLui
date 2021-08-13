@@ -1,11 +1,18 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
+function criaCaixa() {
+    
+    const div = document.createElement('div')
+    
+    div.classList.add('kata')
+    return div
+}
+
 function showResults (n) {
     const body = document.querySelector('body')
-    const div = document.createElement('div')
-    div.classList.add('kata')
-    div.innerText = `${n}`
-    body.appendChild(div)
+    const p = document.createElement('p')
+    p.innerText = `${n}`
+    body.appendChild(p)
 }
 
 function kata1() {
