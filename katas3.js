@@ -17,51 +17,51 @@ function showResults (n) {
 
 function kata1() {
     // implemente o código do kata 1 aqui
-    let result = 0
+    let result = new Array
     for (let i = 1; i <= 25; i++) {
         showResults(i)
-        result = i
+        result.push(i)
     }
     return result
 } kata1()
 
 function kata2() {
     // implemente o código do kata 2 aqui
-    let result = 0
+    let result = new Array
     for (let i = 25; i >= 1; i--) {
         showResults(i)
-        result = i
+        result.push(i)
     }
     return result
 } kata2 ()
 
 function kata3() {
     // implemente o código do kata 3 aqui
-    let result = 0
+    let result = new Array
     for (let i = -1; i >= -25; i--) {
         showResults(i)    
-        result = i
+        result.push(i)
     }
     return result
 }kata3()
 
 function kata4() {
     // implemente o código do kata 4 aqui
-    let result = 0
+    let result = new Array
     for (let i = -25; i <= -1; i++) {
         showResults(i)
-        result = i
+        result.push(i)
     }
     return result
 }kata4()
 
 function kata5() {
     // implemente o código do kata 5 aqui
-    let result = 0
+    let result = new Array
     for (let i = 25; i >= -25; i--) {
         if (i % 2 != 0) {
             showResults(i)
-            result = i
+            result.push(i)
         }
     }
     return result
@@ -69,11 +69,11 @@ function kata5() {
 
 function kata6() {
     // implemente o código do kata 6 aqui
-    let result = 0
+    let result = new Array
     for (let i = 1; i <= 100; i++) {
         if (i % 3 === 0) {
             showResults(i)
-            result = i
+            result.push(i)
         }        
     }
     return result
@@ -81,11 +81,11 @@ function kata6() {
 
 function kata7() {
     // implemente o código do kata 7 aqui
-    let result = 0
+    let result = new Array
     for (let i = 1; i <= 100; i++) {
         if (i % 7 === 0) {
             showResults(i)
-            result = i
+            result.push(i)
         }        
     }
     return result
@@ -93,13 +93,15 @@ function kata7() {
 
 function kata8() {
     // implemente o código do kata 8 aqui
-    let result = 0
+    let result = new Array
     for (let i = 100; i >= 1; i--) {
         if (i % 7 === 0) {
             showResults(i)
+            result.push(i)
         }     
         if (i % 3 === 0) {
             showResults(i)
+            result.push(i)
         }   
     }
     return result
@@ -107,12 +109,12 @@ function kata8() {
 
 function kata9() {
     // implemente o código do kata 9 aqui
-    let result = 0
+    let result = new Array
     for (let i = 0; i < 100; i++) {
         if (i % 5 === 0) {
             if (i % 2 != 0) {
                 showResults(i)      
-                result = i          
+                result.push(i)         
             }
         }
     }
@@ -121,22 +123,22 @@ function kata9() {
 
 function kata10() {
     // implemente o código do kata 10 aqui
-    let result = 0
+    let result = new Array
     for (let i = 0; i < sampleArray.length; i++) {
         showResults(sampleArray[i])
-        result = i
+        result.push(i)
     }
     return result
 }kata10()
 
 function kata11() {
     // implemente o código do kata 11 aqui
-    let result = 0
+    let result = new Array
     for (let i = 0; i < sampleArray.length; i++) {
 
         if (sampleArray[i] % 2 === 0) {
             showResults(sampleArray[i])      
-            result = i      
+            result.push(i)      
         }
     }
     return result
@@ -144,12 +146,12 @@ function kata11() {
 
 function kata12() {
     // implemente o código do kata 12 aqui
-    let result = 0
+    let result = new Array
     for (let i = 0; i < sampleArray.length; i++) {
 
         if (sampleArray[i] % 2 === 1) {
             showResults(sampleArray[i])       
-            result = i     
+            result.push(i)    
         }
     }
     return result
@@ -157,12 +159,12 @@ function kata12() {
 
 function kata13() {
     // implemente o código do kata 13 aqui
-    let result = 0
+    let result = new Array
     for (let i = 0; i < sampleArray.length; i++) {
 
         if (sampleArray[i] % 8 === 0) {
             showResults(sampleArray[i])  
-            result = i          
+            result.push(i)          
         }
     }
     return result
@@ -170,10 +172,11 @@ function kata13() {
 
 function kata14() {
     // implemente o código do kata 14 aqui
-    let result =0
+    let result = new Array
     for (let i = 0; i < sampleArray.length; i++) {
-        result = sampleArray[i] * sampleArray[i]
-        showResults(result)            
+        let aux = sampleArray[i] * sampleArray[i]
+        showResults(aux)
+        result.push(aux)        
     }
     return result
 }kata14()
@@ -183,6 +186,7 @@ function kata15() {
     let aux = 0
     for (let i = 1; i <= 20; i++) {
         aux = aux + i
+       
     }
     showResults(aux)  
     return aux
