@@ -39,7 +39,6 @@ Antes de começar a desenvolver suas funções de resolução dos Katas, crie a 
 14. Exibir o quadrado de cada elemento de sampleArray. _(219961, 570025, …, 222784)_
 15. Exibir a soma de todos os números de 1 a 20.
 16. Exibir a soma de todos os elementos de sampleArray.
-17. Exibir o menor elemento de sampleArray.
 18. Exibir o maior elemento de sampleArray.
 
 ### Desafio Extra:
